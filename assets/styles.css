@@ -2,30 +2,37 @@ body {
   background: #fefefe;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .map {
   background-image: url("./background.png");
   background-size: cover;
   height: 50vh;
+  width: 100vw;
+}
+.map-marker-position {
+  width: 15%;
+  height: 40px;
+  resize: both;
+  overflow: auto;
+  position: relative;
+  /* Descomentar la siguiente linea para ver la magia*/
+  /* border: 1px solid black; */
+  transform: scale(5);
+  mix-blend-mode: multiply; /* Eliminar esta linea para ver la magia */
 }
 .map-marker {
-  width: 40px;
-  height: 20px;
-  overflow: hidden;
-  resize: both;
-  position: relative;
-  transform: scale(5);
-}
-.map-marker::after {
-  content: "";
-  display: block;
+  background: white; /* Eliminar esta linea para ver la magia */
   position: absolute;
   bottom: 0;
   right: 0;
   width: 16px;
   height: 16px;
   pointer-events: none;
-  visibility: visible;
+  width: 16px;
+  height: 18px;
   background-image: url("./map-marker.svg");
-  background-size: cover;
+  background-position: center;
+  background-size: contain;
 }
