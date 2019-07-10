@@ -6,14 +6,14 @@ body {
   align-items: center;
 }
 .map {
-  background-image: url("./background.png");
+  background: url("./background.png") no-repeat center center fixed;
   background-size: cover;
-  height: 50vh;
+  height: 100vh;
   width: 100vw;
 }
 .map-marker-position {
-  width: 15%;
-  height: 40px;
+  width: 35vh;
+  height: 20vh;
   resize: both;
   overflow: auto;
   position: relative;
